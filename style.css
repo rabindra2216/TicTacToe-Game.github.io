@@ -1,0 +1,123 @@
+body{
+
+    background: rgb(102 97 151 / 81%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    word-break: keep-all;
+}
+nav{
+   
+    background-color: rgb(8, 4, 16);
+    height: 6vh;
+    color: white;
+}
+nav li{
+    display: flex;
+    list-style: none;
+    margin-left:10px;
+    font-size: 27px;
+    padding-top: 6px;
+}
+h1{
+    text-align: center;
+    margin: 2rem 1rem;
+    /* color: white; */
+}
+.gameContainer{
+    display: flex;
+    /* background-color: rgb(91, 200, 185); */
+    justify-content: center;
+    margin-top: 10px;
+    /* align-items: center; */
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    
+}
+.gamebox{
+    border: 2px solid black;
+    font-size: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: rgb(99 171 182);
+}
+.gamebox:hover{
+    background-color: rgb(225, 219, 225);
+    cursor: pointer;
+}
+.gameInfo{
+    padding: 0 34px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out ;
+}
+.info{
+    font-size: 1.9rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 6rem;
+
+}
+/* .item{
+    border-radius: 5px;
+} */
+/* .bb-0{
+    border-bottom: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+} */
+.btn{
+    margin: 23px 12px;
+    padding: 3px 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgb(14, 13, 13) !important;
+    color: white;
+}
+#btn-start{
+    background-color: rgb(23, 183, 122);
+}
+#btn-stop{
+    background-color: rgb(205, 24, 24);
+}
+#btn{
+    background-color: #a4d2d19e;
+}
+@media only screen and (max-width:700px) {
+    .gameContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width:500px){
+    .Configuration{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        margin: 0.5rem;
+    }
+}
