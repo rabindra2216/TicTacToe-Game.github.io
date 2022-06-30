@@ -56,7 +56,7 @@ Array.from(boxes).forEach(element =>
             }
             if(count==9)
             {
-                document.getElementsByClassName("info")[0].innerText="Match Dwaw";
+                document.getElementsByClassName("info")[0].innerText="Match Draw";
             }
         }
 
